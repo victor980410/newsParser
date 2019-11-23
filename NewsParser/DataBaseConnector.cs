@@ -28,7 +28,7 @@ namespace NewsParser
                 { "Text", news.Text },
                 { "Tags", new BsonArray(news.Tags.ToArray())},
                 { "SourceUrl", news.SourceUrl},
-                { "TimeSourcePublished", 0 },
+                { "TimeSourcePublished", new BsonDateTime(news.TimeSourcePublished) }
             };
             await newsCollection.InsertOneAsync(document);
         }
