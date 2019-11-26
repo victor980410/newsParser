@@ -28,7 +28,7 @@ namespace NewsParser
     {
         const string websiteUrl = @"https://www.eurointegration.com.ua/news/1970/01/01/";
 
-        private int currentPage = 7103300;
+        private int currentPage = 7103420;
         private DataBaseConnector database = new DataBaseConnector("eurointegration");
 
         public void ReadAllNewPages()
